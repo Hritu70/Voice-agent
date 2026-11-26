@@ -1,0 +1,7 @@
+fastapi>=0.115.12,<1
+uvicorn[standard]>=0.34.0
+# >=1.20 is needed for ThinkingConfig(thinking_budget=...) used with Gemini 2.5 models
+google-genai>=1.20.0,<2
+# chromadb 1.x ships prebuilt wheels for Python 3.13 (0.6.x needs chroma-hnswlib, which often fails to build on 3.13)
+chromadb>=1.0.0,<2
+python-dotenv>=1.0.1
